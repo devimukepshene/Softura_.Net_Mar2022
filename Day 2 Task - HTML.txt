@@ -1,0 +1,9 @@
+Create a simple static web page with following details
+Assume you are creating a page to show the recipe to make any food Item.
+
+
+1.	Give your page a Title and a name.
+2.	Add text to show appropriate description(apply font, paragraph)
+3.	List the ingredients
+4.	Show images of items and finished product.
+5.	Add a footnote.
