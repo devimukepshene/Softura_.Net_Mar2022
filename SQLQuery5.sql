@@ -1,0 +1,49 @@
+use Trial
+go
+create table Regisform
+(
+ID int identity(1,1),
+FirstName varchar(20),
+LastName Varchar(20),
+collegePercent char(10),
+gender char(1),
+qualification Varchar(12),
+DOB char(20),
+emailid varchar(50),
+Ad Varchar(100),
+phno char(10),
+grade varchar(4),
+specialization varchar(50),
+SchoolName varchar(30),
+collegeName Varchar(50),
+Acheivements varchar(40),
+Hobbies varchar(20)
+)
+
+
+
+alter table regisform
+add constraint Pk_ID primary Key (ID)
+alter table regisform
+add constraint CK_gender check(gender in('M','F'))
+alter table regisform
+add constraint CK_quali check(qualification in('BE','Btech'))
+insert into Regisform(FirstName,LastName,collegePercent,gender,qualification,DOB ,emailid,Ad ,phno,grade ,specialization ,SchoolName ,
+collegeName ,Acheivements,Hobbies ) values
+('Devi','Mukepshene','82.5','F','18','BE','22-12-2000','@gmail.com','boseroad,annanagar',
+'1234567890','91.6','CSE','matriculation School','ABC engineering colloge',
+'c,java','cooking')
+Insert into Regisform(
+FirstName,LastName,collegePercent,gender,qualification,DOB ,emailid,Ad ,phno,grade ,specialization ,SchoolName ,
+collegeName ,Acheivements,Hobbies ) values
+('suvetha','prasath','82.5','F','19','Btech','25-07-2005','@gmail.com','swamynagar,adayar',
+'9176910829','91.6','CSE','ghi matriculation School','Def engineering colloge',
+'c,java','art making')
+select * from Regisform
+
+Insert into Regisform(
+FirstName,LastName,collegePercent,gender,Age,qualification,DOB ,emailid,Ad ,phno,grade ,specialization ,SchoolName ,
+collegeName ,Acheivements,Hobbies ) values
+('padma','shree','85.5','Fe','20','ue','07-10-2010','@gmail.com','AB road,BC nagar',
+'5678390173','79.80','IT',' bM matriculation School','ABC engineering colloge',
+'c,java','cooking')
